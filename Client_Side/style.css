@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #F2C14E;
+    --winning-blocks: #2d414b;
+}
+
+body {
+    color: var(--orange);
+    font-family: 'Finger Paint', cursive;
+}
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+}
+body {
+    background-color: #37505C;
+}
+.gameContainer {
+    padding: 40px;
+    margin-left: 200px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #37505C;
+    visibility: hidden;
+
+}
+#txtNickName {
+    padding: .25em;
+    width: 50%;
+    font-size: 20px;
+
+  }
+
+.users{
+    margin-top: 300px;
+}
+#gameboard {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+#btnSignIn{
+    margin-top : 20px;
+}
+.box:nth-child(3n) {
+    border-right: none;
+}
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+} 
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: #333;
+    border-color: var(--orange);
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+}
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+.gameMenu {
+
+    display: flex;
+
+}
+
+#btnSignIn:focus-within {
+    visibility: visible;
+}
+#btnSignIn{
+
+    padding:  15px;
+}
+
+.signIn{
+    margin-top: 350px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+     
+}
+ul{
+
+top: 50%;
+Left: 50%;
+transform: translate(-50%, -50%);
+margin-top: 100px;
+margin-left: 150px;
+padding: 0;
+
+}
+
+
+ul li{
+list-style: none;
+margin-bottom: 20px;
+}
+
+ul li a{
+position: relative;
+font-size: 20PX;
+padding: 10px 20px;
+text-decoration: none;
+text-transform: uppercase;
+color: #262626;
+font-weight: bold;
+}
+
+.sendRequest{
+
+    padding-left: 60px;
+}
+ul li.active a{
+background: #262626;
+color: #fff;
+}
